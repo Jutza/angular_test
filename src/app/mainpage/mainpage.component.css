@@ -1,0 +1,138 @@
+.body{
+  margin: .25em;
+  margin-left: 5em;
+  margin-right: 1em;
+  height: 90%;
+  background-color: #FFF;
+}
+
+.button{
+  color: #4D4F5C;
+}
+
+.container{
+  margin: .5em;
+  padding: 1em;
+}
+
+.right{
+  float: right;
+}
+
+.toolbar{
+  margin: 3em;
+ margin-bottom: 5em;
+  position:static;
+}
+
+.toggle-button{
+  width: 12%;
+}
+
+.dtp{
+  width: 17%;
+  top: 4px;
+  background-color: transparent;
+}
+
+.card-show{
+  margin-top: 3%;
+  overflow: hidden;
+  border: 1px solid #EFEFEF;
+  width: 93%;
+  min-height: 40%;
+  position: absolute;
+}
+
+.center-card {
+  left: 38%;
+  height: 30%;
+  width: 18%;
+  border: 1px solid #B0B0B0;
+  margin-top: 1em;
+}
+
+.week-selector{
+  width: 18%;
+}
+
+.one{
+  width: 28%;
+}
+
+.two{
+  margin-left: 20%
+}
+
+.three{
+  margin-left: 9%;
+}
+
+.employers-button{
+  width: 33%;
+}
+
+.employers{
+  width: 40%;
+}
+
+.card-footer{
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.result-footer{
+  margin-top: -2.75em;
+  float: right;
+}
+
+.content-inside{
+  border: 1px solid #B0B0B0;
+  margin: 1em;
+  padding: 2em;
+  border-radius: .5em;
+
+-webkit-box-shadow: 1px 6px 9px -1px rgba(0,0,0,0.39);
+-moz-box-shadow: 1px 6px 9px -1px rgba(0,0,0,0.39);
+box-shadow: 1px 6px 9px -1px rgba(0,0,0,0.39);
+}
+
+.card-header{
+  border-bottom: 1px solid #B0B0B0;
+  margin-bottom: 2em;
+}
+
+.result-footer{
+  display:inline;
+  margin-bottom: 10%;
+  margin-right: 10%
+}
+
+.inputs{
+  margin-bottom: 1.5em;
+  width:100%;
+  border: none;
+  border-color: transparent;
+  outline: none;
+}
+
+.title{
+  text-align: left;
+}
+
+.same-row{
+  float:left;
+}
+
+.right{
+  float:right;
+}
+
+.foot{
+  border-top: 1px solid #B0B0B0;
+}
+
+.total-hours{
+  float: right;
+  width: 12%;
+}

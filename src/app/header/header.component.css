@@ -1,0 +1,52 @@
+.header{
+  background-color: white;
+  height:5%;
+  border-bottom: .25em solid #EFEFEF;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.profile-img{
+  display: inline-block;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+
+.header-button{
+  margin-right: 1.5em;
+  color: grey;
+}
+
+.search-bar{
+  margin-left: 15em;
+  border-radius: 25px;
+  border: 5px solid #EFEFEF;
+  width: 25em;
+  height: 1.5em;
+  outline: none;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.search-icon{
+    position: relative;
+    top: .30em;
+    color: #EFEFEF;
+}

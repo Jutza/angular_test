@@ -1,0 +1,126 @@
+<div class="body">
+  <div class="container">
+
+    <div class="right">
+      <button mat-icon-button class="button">
+          <mat-icon>
+            calendar_today
+          </mat-icon>
+      </button>
+
+      <button mat-icon-button class="button">
+          <mat-icon>
+            dehaze
+          </mat-icon>
+      </button>
+
+      <button mat-icon-button class="button">
+          <mat-icon>
+            apps
+          </mat-icon>
+      </button>
+    </div>
+
+    <div class="toolbar">
+
+      <div class="same-row toggle-button">
+        <mat-button-toggle-group #colorToggle="matButtonToggleGroup" value="primary" aria-label="Change color">
+            <mat-button-toggle value="primary"> Timecard </mat-button-toggle>
+            <mat-button-toggle value="accent"> Expenses </mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+
+      <div class="same-row dtp">
+        <mat-form-field appearance="fill">
+          <mat-label>Date</mat-label>
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate placeholder="Start date">
+            <input matEndDate placeholder="End date">
+          </mat-date-range-input>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </div>
+
+      <div class="same-row week-selector">
+        <button mat-icon-button class="time-selector one">
+            <mat-icon>
+              calendar_today
+            </mat-icon>
+            Curent Pay Period
+        </button>
+
+        <button mat-icon-button class="time-selector two">
+            <mat-icon>
+              calendar_today
+            </mat-icon>
+            Week
+        </button>
+
+        <button mat-icon-button class="time-selector three">
+            <mat-icon>
+              today
+            </mat-icon>
+            Day
+        </button>
+      </div>
+
+      <div class="same-row employers">
+        <button mat-raised-button color="primary" class="employers-button">Review Time Expenses</button>
+        <button mat-raised-button color="accent" class="employers-button">Time Entry</button>
+        <button mat-raised-button color="warn" class="employers-button">Submit All</button>
+      </div>
+
+
+      <div class="total-hours">
+        <h3>Total Pay Period Hours: {{ paid_period }}</h3>
+      </div>
+
+    </div>
+
+    <div class="card-show">
+
+      <mat-card class="center-card">
+        <mat-card-header class="card-header">
+          <mat-card-title>{{ date }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content class="content-outside">
+
+          <mat-card-content class="content-inside">
+
+            <label for="department" class="title">Department</label>
+            <input name="department" class="inputs" value="Marketing">
+
+            <label for="code" class="title">TE Code</label>
+            <input name="code" class="inputs" value="PTD">
+
+            <label for="project" class="title">Project</label>
+            <input name="project" class="inputs" value="Daily Stuff Going On">
+
+            <label for="task" class="title">Task</label>
+            <input name="task" class="inputs" value="Daily 1">
+
+            <label for="billable" class="title">Billable</label>
+            <input name="billable" class="inputs" value="No">
+
+            <mat-card-footer class="foot">
+              <h3 class="card-footer">Total Hours:</h3>
+              <h3 class="result-footer">{{ total_hours_inside }}</h3>
+            </mat-card-footer>
+
+          </mat-card-content>
+
+        </mat-card-content>
+
+        <mat-card-footer class="foot">
+          <h3 class="card-footer">Total Hours:</h3>
+          <h3 class="result-footer">{{ total_hours_outside }}</h3>
+        </mat-card-footer>
+      </mat-card>
+
+    </div>
+
+  </div>
+
+</div>

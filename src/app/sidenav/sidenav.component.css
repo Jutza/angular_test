@@ -1,0 +1,38 @@
+.container {
+  position:static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.left-sidenav{
+  background-color: #4D4F5C;
+  height: 100%;
+  position: fixed;
+}
+
+#logo{
+  margin-bottom: 2em;
+  width: 50;
+  color: #50ACB5;
+}
+
+.sidenav-icon{
+  color: #FFF;
+  margin: .5em;
+}
+
+.settings{
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 3em;
+}
+
+.arrow{
+  color: #FFF;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
